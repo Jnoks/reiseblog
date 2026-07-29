@@ -156,12 +156,30 @@ footer {
 .footer-left {
     display: flex;
     gap: 0.625em;
-
+    flex-direction: column-reverse;
+    padding-left: 1em;
 }
 
-.footer-left>img {
+.footer-left img {
     height: 16px;
     width: 16px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+    padding-right: 1em;
+}
+
+.footer-right img{
+    width: 24px;
+    height: 24px;
+}
+
+.youtube img{
+    width: 33px;
+    height: 24px;
 }
 
 .copyright {
