@@ -6,7 +6,7 @@ h2 {
     font-family: 'Arima';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: var(--color-primary);
 }
 
@@ -18,7 +18,7 @@ nav {
 
 nav li {
     list-style-type: none;
-    display: none
+    display: none;
 }
 
 header {
@@ -47,13 +47,47 @@ header img {
 }
 
 .highlights-section {
-    padding-top: 80px;
+    padding-top: 5em;
 }
 
 .highlights-headline {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding-bottom: 24px;
+    gap: 0.625em;
+    padding-bottom: 1.5em;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-wrapper {
+  position: absolute;
+  display: flex;
+  width: 300%;
+  transition: all 1s ease-in-out;
+}
+
+.slide { 
+    width: calc(100% / 3); 
+}
+
+.slider input[value="one"]:checked ~ .slider-wrapper { transform: translateX(calc(100% / 3)); }
+.slider input[value="two"]:checked ~ .slider-wrapper { transform: translateX(0); }
+.slider input[value="three"]:checked ~ .slider-wrapper { transform: translateX(calc(-100% / 3)); }
+
+.faq-section {
+    padding-top: 5em;
+}
+
+.faq-headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625em;
+    padding-bottom: 1.5em;
 }
