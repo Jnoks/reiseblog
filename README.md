@@ -8,7 +8,7 @@ Responsive Website für einen Reiseblog. Erste Gruppenarbeit der Umschulung (Dev
 |---|---|---|
 | _Joel Naujoks_ | | @jnoks |
 | _Abed Khodor_ | | @abedkhdr |
-| _Jean-Pascal Steinmetz_ | | @… |
+| _Jean-Pascal Steinmetz_ | | @Jean-Pascal Steinmetz |
 
 ## Setup
 
