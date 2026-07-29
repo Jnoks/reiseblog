@@ -118,7 +118,7 @@ header img {
 #slide-1:checked~.slider-dots label:nth-child(1),
 #slide-2:checked~.slider-dots label:nth-child(2),
 #slide-3:checked~.slider-dots label:nth-child(3) {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
 }
 
 .faq-section {
