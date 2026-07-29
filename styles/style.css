@@ -36,7 +36,7 @@ header img {
 }
 
 .landing-section {
-    background-image: url("../assets/img/cappadocia.jpg");
+    background-image: url("../assets/img/yellow-background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,7 +47,11 @@ header img {
 }
 
 .highlights-section {
-    padding-top: 5em;
+    padding-top: 4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+    
 }
 
 .highlights-headline {
@@ -55,30 +59,67 @@ header img {
     justify-content: center;
     align-items: center;
     gap: 0.625em;
-    padding-bottom: 1.5em;
+    padding-bottom: 1em;
 }
 
 .slider {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider>input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .slider-wrapper {
-  position: absolute;
-  display: flex;
-  width: 300%;
-  transition: all 1s ease-in-out;
+    display: flex;
+    width: 300%;
+    transition: transform 500ms ease-in-out;
 }
 
-.slide { 
-    width: calc(100% / 3); 
+.slide {
+    width: calc(100% / 3);
+    height: 500px;
+    object-fit: cover;
+    border-top-right-radius: 100px;
 }
 
-.slider input[value="one"]:checked ~ .slider-wrapper { transform: translateX(calc(100% / 3)); }
-.slider input[value="two"]:checked ~ .slider-wrapper { transform: translateX(0); }
-.slider input[value="three"]:checked ~ .slider-wrapper { transform: translateX(calc(-100% / 3)); }
+#slide-1:checked~.slider-wrapper {
+    transform: translateX(0);
+}
+
+#slide-2:checked~.slider-wrapper {
+    transform: translateX(calc(-100% / 3));
+}
+
+#slide-3:checked~.slider-wrapper {
+    transform: translateX(calc(-200% / 3));
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.slider-dots label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+#slide-1:checked~.slider-dots label:nth-child(1),
+#slide-2:checked~.slider-dots label:nth-child(2),
+#slide-3:checked~.slider-dots label:nth-child(3) {
+    background-color: var(--color-primary);
+}
 
 .faq-section {
     padding-top: 5em;
@@ -115,7 +156,7 @@ footer {
 .footer-left {
     display: flex;
     gap: 0.625em;
-     
+
 }
 
 .footer-left>img {

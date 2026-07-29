@@ -17,9 +17,9 @@
         <nav>
             <img src="./assets/icons/header-logo.svg" alt="">
             <ul>
-                <li><a href=""></a>Highlights</li>
-                <li><a href=""></a>FAQ</li>
-                <li><a href=""></a>Contact</li>
+                <li><a href="">Highlights</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -36,13 +36,20 @@
                 <h2>Highlights</h2>
             </div>
             <section class="slider">
-                <input type="radio" name="slider" value="one" checked>
-                <input type="radio" name="slider" value="two">
-                <input type="radio" name="slider" value="three">
+                <input type="radio" name="slider" id="slide-1" checked>
+                <input type="radio" name="slider" id="slide-2">
+                <input type="radio" name="slider" id="slide-3">
+
                 <div class="slider-wrapper">
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
+                    <img class="slide" src="./assets/img/beaches.jpg" alt="">
+                    <img class="slide" src="./assets/img/copenhagen.jpg" alt="">
+                    <img class="slide" src="./assets/img/pataya.jpg" alt="">
+                </div>
+
+                <div class="slider-dots">
+                    <label for="slide-1"></label>
+                    <label for="slide-2"></label>
+                    <label for="slide-3"></label>
                 </div>
             </section>
         </section>
