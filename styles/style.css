@@ -91,3 +91,39 @@ header img {
     gap: 0.625em;
     padding-bottom: 1.5em;
 }
+
+.contact-section {
+    padding-top: 5em;
+}
+
+.contact-headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625em;
+    padding-bottom: 1.5em;
+}
+
+footer {
+    height: 134px;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    gap: 0.625em;
+     
+}
+
+.footer-left>img {
+    height: 16px;
+    width: 16px;
+}
+
+.copyright {
+    display: flex;
+    gap: 0.5em;
+}
