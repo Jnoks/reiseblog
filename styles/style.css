@@ -150,7 +150,8 @@ footer {
     background-color: var(--color-primary);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 1em;
 }
 
 .footer-left {
@@ -168,16 +169,19 @@ footer {
 .footer-right {
     display: flex;
     gap: 1em;
-    justify-content: flex-end;
     padding-right: 1em;
 }
 
-.footer-right img{
+.footer-right a{
+    display: flex;
+}
+
+.footer-right img {
     width: 24px;
     height: 24px;
 }
 
-.youtube img{
+.youtube img {
     width: 33px;
     height: 24px;
 }
@@ -186,3 +190,17 @@ footer {
     display: flex;
     gap: 0.5em;
 }
+
+.footer-left>a {
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    font-family: palanguin;
+    font-weight: 400;
+}
+
+.copyright p {
+    color: var(--color-text-secondary);
+    font-family: palanguin;
+    font-weight: 400;
+}
+
