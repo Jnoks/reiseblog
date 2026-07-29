@@ -19,7 +19,7 @@ Eine responsive Website für einen Reiseblog nach Figma-Vorlage, auf der Reisezi
 |---|---|---|
 | _Joel Naujoks_ | | @jnoks |
 | _Abed Khodor_ | | @abedkhdr |
-| _Jean-Pascal Steinmetz_ | | @Jean-Pascal Steinmetz |
+| _Jean-Pascal Steinmetz_ | |@Jean-Pascal Steinmetz |
 
 ## 4. Meilensteine
 
