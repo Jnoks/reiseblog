@@ -10,13 +10,8 @@ h2 {
     color: var(--color-primary);
 }
 
-nav {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
 
-nav li {
+.desktop-nav li {
     list-style-type: none;
     display: none;
 }
@@ -201,3 +196,27 @@ footer {
     font-weight: 400;
 }
 
+.mobile-nav {
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: var(--color-secondary);
+
+}
+
+.mobile-nav li {
+    list-style-type: none;
+}
+
+.mobile-nav ul {
+    display: flex;
+    gap: 2.5em;
+}
+
+.mobile-nav img {
+    height: 34px;
+    height: 34px;
+}
