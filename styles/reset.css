@@ -8,3 +8,10 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
 }
+
+summary{
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+}

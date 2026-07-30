@@ -220,3 +220,20 @@ footer {
     height: 34px;
     height: 34px;
 }
+
+summary{
+    list-style:url(../assets/icons/faq\ arrow.svg);
+    color:var(--color-text-primary);
+    background-color:var(--color-secondary);
+    width: 100dvh;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+details{
+    display: flex;
+    justify-content:center;
+}
