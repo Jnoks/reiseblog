@@ -64,6 +64,7 @@ header img {
 
 .slider>input[type="radio"] {
     position: absolute;
+    bottom: 16px;
     opacity: 0;
     pointer-events: none;
 }
