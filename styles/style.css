@@ -145,8 +145,7 @@ footer {
     background-color: var(--color-primary);
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    padding-bottom: 1em;
+align-items: center;
 }
 
 .footer-left {
@@ -161,26 +160,32 @@ footer {
     width: 16px;
 }
 
+.footer-right a {
+    display: flex;
+}
+
 .footer-right {
     display: flex;
-    gap: 1em;
+    gap: 0.75em;
     justify-content: flex-end;
     padding-right: 1em;
+    padding-top: 3em;
+    align-items: end;
 }
 
-.footer-right img{
-    width: 24px;
-    height: 24px;
+.footer-right img {
+    width: 20px;
+    height: 20px;
 }
 
-.youtube img{
-    width: 33px;
-    height: 24px;
+.youtube img {
+    width: 26px;
+    height: 20px;
 }
 
 .copyright {
     display: flex;
-    gap: 0.5em;
+    gap: 0.2em;
 }
 
 .footer-left>a {
