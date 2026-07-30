@@ -189,7 +189,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 0.2em;
-    margin-left: -1.33px;
+    margin-left: -1.3px;
 }
 
 .footer-left>a {
@@ -213,6 +213,10 @@ footer {
     padding-left: 1em;
     padding-right: 1em;
     background-color: var(--color-secondary);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .mobile-nav li {
