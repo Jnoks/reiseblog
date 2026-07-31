@@ -18,7 +18,6 @@ h2 {
     color: var(--color-primary);
 }
 
-
 .desktop-nav li {
     list-style-type: none;
     display: none;
@@ -33,6 +32,10 @@ header {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+}
+
 header img {
     height: 56px;
     width: 56px;
@@ -40,6 +43,9 @@ header img {
 
 .landing-section {
     position: relative;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     height: 515px;
     background-image: url(../assets/img/hero-cappadocia.jpg);
     background-repeat: no-repeat;
@@ -89,61 +95,6 @@ header img {
     width: 30%;
 }
 
-@media (min-width: 769px) {
-
-    .landing-section {
-        height: 547px;
-        background-position: 10% 50%;
-    }
-
-    .landing-blob {
-        top: 0;
-        width: max(45%, 520px);
-        height: 100%;
-        background-image: url(../assets/img/yellow-landing-bg-dektop.png);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        padding: 130px 217px 0 8%;
-    }
-
-    .landing-text {
-        display: block;
-        color: var(--color-text-primary);
-    }
-
-    .landing-text h1 {
-        font-family: 'Arima';
-        font-weight: 700;
-        font-size: 2rem;
-        color: var(--color-text-primary);
-    }
-
-    .landing-text p {
-        font-family: 'Palanquin';
-        font-size: 1rem;
-        line-height: 1.5;
-        padding-top: 1.25em;
-    }
-
-    .landing-badge {
-        top: 285px;
-        right: 40px;
-        left: auto;
-        width: 160px;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    .landing-text h1 {
-        font-size: 3.5rem;
-    }
-
-    .landing-text p {
-        font-size: 1.25rem;
-    }
-}
-
 @keyframes badge-spin {
     to {
         transform: rotate(360deg);
@@ -151,10 +102,12 @@ header img {
 }
 
 .highlights-section {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 4em;
     padding-left: 1em;
     padding-right: 1em;
-
 
 }
 
@@ -260,6 +213,9 @@ header img {
 }
 
 .faq-section {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 4em;
     padding-left: 1em;
     padding-right: 1em;
@@ -274,6 +230,9 @@ header img {
 }
 
 .contact-section {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 5em;
     padding-left: 1em;
     padding-right: 1em;
@@ -286,6 +245,10 @@ header img {
     align-items: center;
     gap: 0.625em;
     padding-bottom: 1.5em;
+}
+
+.section-intro {
+    display: none;
 }
 
 .contact-form {
@@ -361,13 +324,20 @@ header img {
 footer {
     background-color: var(--color-primary);
     display: flex;
+    justify-content: center;
+    min-height: 134px;
+}
+
+.footer-inner {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     gap: 0.625em;
     padding-left: 1em;
     padding-right: 1em;
-    padding-bottom: 13px;
-    min-height: 134px;
+    padding-bottom: 12px;
 }
 
 .footer-legal {
@@ -644,7 +614,6 @@ footer {
     object-fit: cover;
 }
 
-
 .article-list {
     margin: -4px 0 18px;
     padding-left: 25px;
@@ -731,3 +700,190 @@ footer {
     text-decoration: none;
 }
 
+
+@media (min-width: 769px) {
+
+    .faq {
+        max-width: none;
+    }
+
+    .highlights-section,
+    .faq-section,
+    .contact-section {
+        padding-left: 6em;
+        padding-right: 6em;
+    }
+
+    .footer-inner {
+        flex-direction: row;
+        align-items: center;
+        gap: 2em;
+        padding-left: 6em;
+        padding-right: 6em;
+        padding-bottom: 0;
+    }
+
+    .footer-row {
+        display: contents;
+    }
+
+    .copyright {
+        order: 1;
+    }
+
+    .footer-legal {
+        order: 2;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .footer-social {
+        order: 3;
+        margin-left: auto;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+        align-items: center;
+        gap: 3.5em;
+        width: 100%;
+        max-width: 1440px;
+        padding-left: 6em;
+        padding-right: 6em;
+    }
+
+    .desktop-nav ul {
+        display: flex;
+        gap: 4em;
+    }
+
+    .desktop-nav li {
+        display: block;
+    }
+
+    .desktop-nav a {
+        text-decoration: none;
+        color: var(--color-text-secondary);
+        font-family: 'Palanquin';
+        font-weight: 700;
+        font-size: 1.125rem;
+    }
+
+    .landing-section {
+        height: 547px;
+        background-position: 10% 50%;
+    }
+
+    .landing-blob {
+        top: 0;
+        width: max(45%, 520px);
+        height: 100%;
+        background-image: url(../assets/img/yellow-landing-bg-dektop.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .landing-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 6em;
+        padding-right: 6em;
+    }
+
+    .landing-text {
+        display: block;
+        padding-top: 130px;
+        max-width: 25%;
+        color: var(--color-text-primary);
+    }
+
+    .landing-text h1 {
+        font-family: 'Arima';
+        font-weight: 700;
+        font-size: 2rem;
+        color: var(--color-text-primary);
+    }
+
+    .landing-text p {
+        font-family: 'Palanquin';
+        font-size: 1rem;
+        line-height: 1.5;
+        padding-top: 1.25em;
+    }
+
+    .landing-badge {
+        top: 285px;
+        right: 40px;
+        left: auto;
+        width: 160px;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .section-intro {
+        display: block;
+        max-width: 55em;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 3em;
+        text-align: center;
+        font-size: 1.125rem;
+        line-height: 1.5;
+        color: var(--color-text-primary);
+    }
+
+    .slide-text {
+        top: 10%;
+        left: 5%;
+        right: 25%;
+    }
+
+    .contact-form {
+        max-width: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .form-field {
+        width: 45%;
+    }
+
+    .form-field-full,
+    .form-privacy {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .send-button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-inner {
+        gap: 6em;
+    }
+
+    .footer-legal {
+        gap: 4.5em;
+    }
+
+    .landing-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .landing-text p {
+        font-size: 1.25rem;
+    }
+}
