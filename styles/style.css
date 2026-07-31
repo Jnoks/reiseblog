@@ -6,7 +6,7 @@ h2 {
     font-family: 'Arima';
     font-style: normal;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     color: var(--color-primary);
 }
 
@@ -64,6 +64,7 @@ header img {
 
 .slider>input[type="radio"] {
     position: absolute;
+    bottom: 16px;
     opacity: 0;
     pointer-events: none;
 }
@@ -99,7 +100,7 @@ header img {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 8px;
+    gap: 0.5em;
 }
 
 .slider-dots label {
@@ -117,7 +118,9 @@ header img {
 }
 
 .faq-section {
-    padding-top: 5em;
+    padding-top: 4em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .faq-headline {
@@ -130,6 +133,9 @@ header img {
 
 .contact-section {
     padding-top: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 5em;
 }
 
 .contact-headline {
@@ -138,6 +144,76 @@ header img {
     align-items: center;
     gap: 0.625em;
     padding-bottom: 1.5em;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    font-family: 'Palanquin';
+    font-size: 1.25rem;
+    color: var(--color-text-primary);
+}
+
+.form-field input {
+    border: none;
+    border-bottom: 1px solid var(--color-text-primary);
+    background-color: transparent;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    font-family: 'Palanquin';
+    font-size: 1rem;
+    color: var(--color-text-primary);
+}
+
+.form-field input:focus {
+    outline: none;
+    border-bottom-width: 2px;
+}
+
+.form-privacy {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625em;
+}
+
+.form-privacy input[type="checkbox"]:checked {
+    background-color: var(--color-primary);
+
+}
+
+.form-privacy label {
+    font-family: 'Palanquin';
+    color: var(--color-text-primary);
+}
+
+.form-privacy a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.send-button {
+    align-self: center;
+    padding: 0.5em 2.5em;
+    border: 1px solid gray;
+    border-radius: 40px;
+    background-color: var(--color-background);
+    font-family: 'Arima';
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: gray;
+    cursor: pointer;
 }
 
 footer {
@@ -158,7 +234,6 @@ footer {
 .footer-left img {
     height: 16px;
     width: 16px;
-    padding-top: 5px;
 }
 
 .footer-right a {
@@ -186,7 +261,9 @@ footer {
 
 .copyright {
     display: flex;
+    align-items: center;
     gap: 0.2em;
+    margin-left: -1.3px;
 }
 
 .footer-left>a {
@@ -210,6 +287,10 @@ footer {
     padding-left: 1em;
     padding-right: 1em;
     background-color: var(--color-secondary);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .mobile-nav li {
@@ -230,52 +311,64 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-summary {
-    color: var(--color-text-primary);
-    background-color: var(--color-secondary);
-    width: 100dvh;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-
-}
-
-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    gap: 1em;
 }
 
 .faq {
+    width: 100%;
     max-width: 600px;
-    border-radius: 8px;
-    background: #fff;
+    background-color: var(--color-secondary);
+    border-radius: 12px;
+    padding: 0.75em;
 }
 
 .faq summary {
-    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    padding: 0.5em;
+    color: var(--color-text-primary);
     font-weight: 700;
+    cursor: pointer;
     list-style: none;
 }
 
 .faq summary::after {
     content: url(../assets/icons/faq-arrow.svg);
-    font-size: 1.3rem;
+    flex-shrink: 0;
 }
-
-
 
 .faq[open] summary::after {
     content: url(../assets/icons/faq-arrow-2.svg);
 }
 
-
 .faq p {
-    margin: 14px 0 0;
-    line-height: 1.5;
+    background-color: var(--color-background);
+    border-radius: 8px;
+    padding: 0.75em 1em;
+    margin-top: 0.75em;
 }
+
+.faq {
+  interpolate-size: allow-keywords;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+
+.faq::details-content {
+  block-size: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    block-size 0.35s ease,
+    opacity 0.25s ease,
+    content-visibility 0.35s allow-discrete;
+}
+
+.faq[open]::details-content {
+  block-size: auto;
+  opacity: 1;
+}
+

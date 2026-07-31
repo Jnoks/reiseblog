@@ -59,25 +59,49 @@
                 <h2>FAQ</h2>
             </div>
             <div class="faq-all">
-            <details class="faq">
-                    <summary>What's the story behind my travel blog ?</summary>
+                <details class="faq">
+                    <summary>What's the story behind my travel blog?</summary>
                     <p>Meine Antwort</p>
                 </details>
                 <details class="faq">
-                    <summary>How do I plan, document, and share my travels ?</summary>
+                    <summary>How do I plan, document, and share my travels?</summary>
                     <p>Meine Antwort </p>
                 </details>
                 <details class="faq">
-                    <summary>How can readers support this blog and the work behind it ?</summary>
+                    <summary>How can readers support this blog and the work behind it?</summary>
                     <p>Meine Antwort</p>
                 </details>
-                </div>
+            </div>
         </section>
         <section class="contact-section">
             <div class="contact-headline">
                 <img src="./assets/icons/person-pin-yellow.svg" alt="">
                 <h2>Contact form</h2>
             </div>
+            <form class="contact-form">
+                <div class="form-field">
+                    <label for="contact-name">What's your name?</label>
+                    <input type="text" id="contact-name" name="name">
+                </div>
+
+                <div class="form-field">
+                    <label for="contact-email">What's your email?</label>
+                    <input type="email" id="contact-email" name="email">
+                </div>
+
+                <div class="form-field">
+                    <label for="contact-message">How can I help?</label>
+                    <input type="text" id="contact-message" name="message">
+                </div>
+
+                <div class="form-privacy">
+                    <input type="checkbox" id="contact-privacy" name="privacy">
+                    <label for="contact-privacy">I've read the <a href="#">privacy policy</a> and agree to
+                        the processing of my data as outlined.</label>
+                </div>
+
+                <button class="send-button" type="button">Send</button>
+            </form>
         </section>
     </main>
     <!--MAIN END-->
