@@ -1,5 +1,6 @@
 body {
     background-color: var(--color-background);
+    font-family: 'Palanquin';
 }
 
 h1 {
@@ -38,14 +39,10 @@ header img {
 }
 
 .landing-section {
-    background-image: url("../assets/img/yellow-background.png");
-    background-position: center;
+    background-image: url(../assets/img/cappadocia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 550px;
 }
 
 .highlights-section {
@@ -276,13 +273,13 @@ footer {
 .footer-left>a {
     text-decoration: none;
     color: var(--color-text-secondary);
-    font-family: palanguin;
+    font-family: 'Palanquin';
     font-weight: 400;
 }
 
 .copyright p {
     color: var(--color-text-secondary);
-    font-family: palanguin;
+    font-family: 'Palanquin';
     font-weight: 400;
 }
 
@@ -355,6 +352,9 @@ footer {
     border-radius: 8px;
     padding: 0.75em 1em;
     margin-top: 0.75em;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-primary);
 }
 
 .faq {
