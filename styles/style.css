@@ -39,10 +39,115 @@ header img {
 }
 
 .landing-section {
-    background-image: url(../assets/img/cappadocia.jpg);
+    position: relative;
+    height: 515px;
+    background-image: url(../assets/img/hero-cappadocia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 550px;
+    background-position: 45% 50%;
+}
+
+.landing-blob {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 290px;
+    background-image: url(../assets/img/yellow-landing-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.landing-text {
+    display: none;
+}
+
+.landing-badge {
+    position: absolute;
+    top: 120px;
+    left: 70px;
+    width: 160px;
+    height: 160px;
+}
+
+.badge-circle {
+    width: 100%;
+}
+
+.badge-text {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    width: 85%;
+    animation: badge-spin 18s linear infinite;
+}
+
+.badge-flag {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    width: 30%;
+}
+
+@media (min-width: 769px) {
+
+    .landing-section {
+        height: 547px;
+        background-position: 10% 50%;
+    }
+
+    .landing-blob {
+        top: 0;
+        width: max(45%, 520px);
+        height: 100%;
+        background-image: url(../assets/img/yellow-landing-bg-dektop.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding: 130px 217px 0 8%;
+    }
+
+    .landing-text {
+        display: block;
+        color: var(--color-text-primary);
+    }
+
+    .landing-text h1 {
+        font-family: 'Arima';
+        font-weight: 700;
+        font-size: 2rem;
+        color: var(--color-text-primary);
+    }
+
+    .landing-text p {
+        font-family: 'Palanquin';
+        font-size: 1rem;
+        line-height: 1.5;
+        padding-top: 1.25em;
+    }
+
+    .landing-badge {
+        top: 285px;
+        right: 40px;
+        left: auto;
+        width: 160px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .landing-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .landing-text p {
+        font-size: 1.25rem;
+    }
+}
+
+@keyframes badge-spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .highlights-section {
@@ -318,7 +423,7 @@ footer {
 }
 
 .footer-social img {
-    height: clamp(24px, 7vw, 28px);
+    height: 24px;
     width: auto;
 }
 
