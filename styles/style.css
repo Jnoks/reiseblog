@@ -38,14 +38,10 @@ header img {
 }
 
 .landing-section {
-    background-image: url("../assets/img/yellow-background.png");
-    background-position: center;
+    background-image: url(../assets/img/cappadocia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 550px;
 }
 
 .highlights-section {
