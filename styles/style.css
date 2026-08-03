@@ -460,7 +460,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     gap: 1em;
-    padding: 0.5em;
     color: var(--color-text-primary);
     font-weight: 700;
     cursor: pointer;
@@ -929,6 +928,8 @@ footer {
 
 @media (min-width: 769px) {
 
+
+
     .article {
         max-width: 1440px;
         margin-left: auto;
@@ -1119,6 +1120,7 @@ footer {
     .footer-social {
         order: 3;
         margin-left: auto;
+        gap: 1em;
     }
 
     .mobile-nav {
@@ -1227,6 +1229,9 @@ footer {
 }
 
 @media (min-width: 1280px) {
+
+
+
 
     .article h1 {
         font-size: 4rem;
@@ -1344,9 +1349,10 @@ footer {
         margin-right: auto;
         padding-bottom: 3em;
         text-align: center;
-        font-size: 1.125rem;
+        font-size: 1.5rem;
         line-height: 1.5;
         color: var(--color-text-primary);
+        font-weight: 500;
     }
 
     .slide-text {
@@ -1386,20 +1392,44 @@ footer {
     }
 
     .landing-text h1 {
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 
     .landing-text p {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+        font-weight: 600;
     }
 
-      .article-video {
+    .article-video {
         height: 600px;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
     }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+
+    .faq summary {
+        font-size: 1.5rem;
+
+    }
+
+    .icons {
+        height: 60px;
+    }
+
+    .section-intro {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .form-field label {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
 }
 
-@media (min-width:1440px) {
-  
-}
+@media (min-width:1440px) {}
