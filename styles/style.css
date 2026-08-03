@@ -295,9 +295,24 @@ header img {
     gap: 0.625em;
 }
 
-.form-privacy input[type="checkbox"]:checked {
-    background-color: var(--color-primary);
+.form-privacy input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 5px;
+    border: 1px solid var(--color-text-primary);
+    border-radius: 4px;
+    cursor: pointer;
+}
 
+.form-privacy input[type="checkbox"]:checked {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    background-image: url(../assets/icons/check-yellow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px;
 }
 
 .form-privacy label {
