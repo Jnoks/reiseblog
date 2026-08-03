@@ -951,6 +951,60 @@ footer {
     opacity: 1;
 }
 
+
+
+.faq1 {
+    position: relative;
+    display: inline-block;
+}
+
+.faq1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -0.2px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 30px;
+    background-image: url("../assets/icons/faq-line.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 250ms ease;
+}
+
+.faq1:hover::after {
+    opacity: 1;
+}
+
+.contact {
+    position: relative;
+    display: inline-block;
+}
+
+.contact::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 30px;
+    background-image: url("../assets/icons/conatact-line.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 250ms ease;
+}
+
+.contact:hover::after {
+    opacity: 1;
+}
+
+
+
 @media (min-width: 769px) {
 
 
