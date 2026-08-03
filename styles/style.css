@@ -926,6 +926,31 @@ footer {
     background-color: var(--color-primary);
 }
 
+.highlight {
+    position: relative;
+    display: inline-block;
+}
+
+.highlight::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -0.5px;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 30px;
+    background-image: url("../assets/icons/highlights-line.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 250ms ease;
+}
+
+.highlight:hover::after {
+    opacity: 1;
+}
+
 @media (min-width: 769px) {
 
 
