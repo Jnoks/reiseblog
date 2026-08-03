@@ -447,8 +447,7 @@ footer {
 
 .mobile-nav ul {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    gap: 3em;
 }
 
 .mobile-nav img {
