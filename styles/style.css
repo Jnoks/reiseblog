@@ -563,7 +563,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 4px 12px;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     color: var(--color-text-primary);
     font-size: 0.875rem;
 }
@@ -615,6 +615,7 @@ footer {
 }
 
 .article>p,
+.article-column>p,
 .article-head-text>p {
     margin-bottom: 1em;
     font-family: palanquin;
@@ -652,6 +653,29 @@ footer {
 .article-list {
     margin: 0 0 2em;
     padding-left: 25px;
+}
+
+.section-headline {
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-family: 'Arima';
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--color-text-primary);
+}
+
+.chart-card {
+    max-width: 620px;
+    margin: 0 auto 4em;
+    border-radius: 24px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.chart-card img {
+    display: block;
+    width: 100%;
+    border-radius: 24px;
 }
 
 .article-list li+li {
@@ -714,7 +738,7 @@ footer {
 .share-section {
     position: relative;
     min-height: 120px;
-    margin-top: 2em;
+    margin-top: 4em;
     text-align: center;
 }
 
@@ -1066,7 +1090,17 @@ footer {
         font-size: 1rem;
     }
 
-    .top5-headline {
+    .article>p,
+    .article-column>p,
+    .article-list li,
+    .pro-tipps li,
+    .share-section p {
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+
+    .top5-headline,
+    .section-headline {
         font-size: 1.5rem;
     }
 
@@ -1360,8 +1394,24 @@ footer {
         height: 104px;
     }
 
-    .top5-headline {
+    .top5-headline,
+    .section-headline {
         font-size: 2rem;
+    }
+
+    .article-columns {
+        display: flex;
+        gap: 3em;
+    }
+
+    .article-column {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-column .chart-card {
+        margin-top: auto;
     }
 
     .top5-slider {
@@ -1403,6 +1453,7 @@ footer {
     }
 
     .article>p,
+    .article-column>p,
     .article-list li,
     .pro-tipps li,
     .share-section p {
@@ -1412,12 +1463,15 @@ footer {
 
     .article-list-intro,
     .article-list {
-        margin-left: 3em;
+        max-width: 1050px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .pro-tipps {
-        margin-left: 30px;
-        margin-right: 30px;
+        max-width: 1050px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .pro-tipps ol {
