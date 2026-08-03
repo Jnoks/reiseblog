@@ -673,6 +673,28 @@ footer {
     padding-left: 25px;
 }
 
+.back-link {
+    display: inline-block;
+    margin-bottom: 2em;
+    color: var(--color-primary);
+    font-family: 'Palanquin';
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.imprint-subheadline {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-family: 'Palanquin';
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-text-primary);
+}
+
 .section-headline {
     margin-top: 2em;
     margin-bottom: 1.5em;
