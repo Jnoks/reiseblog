@@ -1233,6 +1233,11 @@ footer {
         z-index: 1;
     }
 
+    .share-arrow {
+        width: 100px;
+        bottom: 14px;
+    }
+
     .faq {
         max-width: none;
     }

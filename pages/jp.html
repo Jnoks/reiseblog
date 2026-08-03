@@ -152,7 +152,10 @@
             <div class="share-section">
                 <p>Follow me for more content like this, and<br>
                     share the article with your friends!</p>
-                <img class="share-arrow" src="../assets/icons/arrow-mobile.svg" alt="">
+                <picture>
+                    <source media="(min-width: 769px)" srcset="../assets/icons/arrow.svg">
+                    <img class="share-arrow" src="../assets/icons/arrow-mobile.svg" alt="">
+                </picture>
                 <input type="checkbox" id="share-open">
                 <div class="share-action">
                     <label class="share-button" for="share-open">
