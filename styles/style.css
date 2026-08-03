@@ -1370,13 +1370,13 @@ footer {
     .landing-text h1 {
         font-family: 'Arima';
         font-weight: 700;
-        font-size: 2rem;
+        font-size: 2.75rem;
         color: var(--color-text-primary);
     }
 
     .landing-text p {
         font-family: 'Palanquin';
-        font-size: 1rem;
+        font-size: 1.25rem;
         line-height: 1.5;
         padding-top: 1.25em;
     }
