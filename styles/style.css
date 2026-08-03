@@ -394,15 +394,6 @@ footer {
     display: flex;
     align-items: baseline;
     gap: 0.2em;
-    margin-left: -1.3px;
-}
-
-.copyright img {
-    height: 0.8em;
-    width: 0.8em;
-    align-self: baseline;
-    position: relative;
-    top: 0.1em;
 }
 
 .copyright p {
@@ -495,8 +486,9 @@ footer {
     border-radius: 8px;
     padding: 0.75em 1em;
     margin-top: 0.75em;
+    font-weight: 500;
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.2;
     color: var(--color-text-primary);
 }
 
@@ -579,11 +571,12 @@ footer {
     flex-wrap: wrap;
     gap: 4px 12px;
     margin-bottom: 3em;
+    list-style: none;
     color: var(--color-text-primary);
     font-size: 0.875rem;
 }
 
-.article-meta span {
+.article-meta li {
     display: flex;
     align-items: center;
     gap: 3px;
@@ -693,6 +686,13 @@ footer {
     border-radius: 24px;
 }
 
+.chart-card figcaption {
+    padding: 0.75em 1em;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--color-text-primary);
+}
+
 .article-list li+li {
     margin-top: 5px;
 }
@@ -724,10 +724,11 @@ footer {
     height: 38px;
 }
 
-.pro-tipps-title h3 {
+.pro-tipps-title h2 {
     font-family: 'Palanquin';
     font-weight: 700;
     font-size: 1.5rem;
+    color: var(--color-secondary);
 }
 
 .pro-tipps ol {
@@ -853,6 +854,7 @@ footer {
 
 
 .top5-headline {
+    width: 100%;
     margin-bottom: 1.5em;
     text-align: center;
     font-family: 'Arima';
@@ -864,6 +866,7 @@ footer {
 .top5-slider {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
     max-width: 400px;
