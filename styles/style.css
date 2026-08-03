@@ -1224,6 +1224,9 @@ footer {
         margin-bottom: 1.5em;
     }
 
+    .desktop-nav ul a:active {
+        color: var(--color-secondary);
+    }
 
 
 }
