@@ -5,4 +5,9 @@ h3{
     font-style: bold;
     color: var(--color-text-primary);
 }
+  
+.article-media{
+    width: 640px;
+    height: 436px;
+}
 

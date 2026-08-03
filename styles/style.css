@@ -1261,6 +1261,9 @@ footer {
         line-height: 1.4;
     }
 
+
+
+
     .article .author-card h2 {
         font-size: 1.5rem;
     }
@@ -1395,4 +1398,8 @@ footer {
         margin-top: 1.5em;
         margin-bottom: 1.5em;
     }
+}
+
+@media (min-width:1440px) {
+  
 }
